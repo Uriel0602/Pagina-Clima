@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 32, 75);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    box-shadow: 1px 1px 8px rgb(255, 217, 50);
+}
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+    font-size: 18px;
+    margin: 7px;
+}
+a:hover{
+    color: rgb(255, 217, 50);
+}
+img{
+    height: 60px;
+}
+.pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    color: rgb(255,255,255);
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.columnas{
+    background-color: rgba(255, 255, 255, 0.61);
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 30px;
+}
+.columna1{
+   margin: 10px 10px 10px 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.columna2{
+    margin: 10px 40px 10px 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.elemento{
+    background-color:rgb(255, 217, 50); ;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+#resultado{
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+@media (max-width: 650px){
+    header{
+        flex-direction: column;
+    }
+    .titulo{
+        margin-bottom: 10px;
+    }
+    .menu{
+        margin-bottom: 10px;
+    }
+    .pagina{
+        margin-top: 30px;
+    }
+    .encabezado{
+        font-size: 16px;
+    }
+    .columnas{
+        width: 340px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .columnas div{
+        font-size: 14px;
+    }
+    .columna1{
+        margin: 10px;
+    }
+    .columna2{
+        margin: 10px;
+    }
+}

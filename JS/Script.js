@@ -1,12 +1,12 @@
 let localidad = document.querySelector('.localidad')
 let precipitacion;
 let humedad = document.querySelector('.humedad');
-let sol;
-let veloViento = document.querySelector('.viento');
-let descripcion = document.querySelector('.descrip');
-let localizacion = document.querySelector('.localizacion');
+let veloViento = document.querySelector('.viento');let descripcion = document.querySelector('.descrip');
 let visibilidad = document.querySelector('.visibilidad');
 let temperatura = document.querySelector('.temperatura');
+let long = document.querySelector('.long');
+let lat = document.querySelector('.lat') 
+
 const kelvin = 273.15;
 //Cargar posicion actual
 window.addEventListener('load', () => {
@@ -16,7 +16,7 @@ if (navigator.geolocation){
         latitud = localizacion.coords.latitude;
         longitud = localizacion.coords.longitude;
     
-        //API
+        //API 
         const APIkey = '816b228858c43a100911167f902fc320';
         const APIurl = 'https://api.openweathermap.org/data/2.5/weather?lat='+latitud+'&lon='+longitud+'&appid='+APIkey;
         
@@ -39,7 +39,11 @@ if (navigator.geolocation){
         
             descripcion.textContent = data.weather[0].description;
             
-            visibilidad.textContent = data.visibility
+            visibilidad.textContent = data.visibility + ' m'
+
+            long.textContent =  data.coord.lon;  
+            
+            lat.textContent = data.coord.lat;
         })
     }) 
         

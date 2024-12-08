@@ -3,26 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ClimWeb</title>
+    <link rel="shortcut icon" href="Img/logo clima.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/clima style.css">
 </head>
 <body>
     <header>
-        <div>
-            <center><h1>Clima</h1></center>
+        <div class="titulo">
+            <img src="Img/logo clima.png" alt="logo">
+            <h2>ClimWeb</h2>
         </div>
-        <label for="buscador"><input type="text" placeholder="Busca tu ciudad actual"></label>
-    <button type="submit" id="buscador">Buscar</button>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Contactanos</a>
+        </div>
     </header>
-    <h1>El clima en su localidad es:</h1>
-    <div class="localidad"></div>
-    <div class="precipitacion"></div>
-    <div class="humedad"></div>
-    <div class="sol"></div>
-    <div class="viento"></div>
-    <div class="temperatura"></div>
-    <div class="descrip"></div>
-    <div class="localizacion"></div>
-    <div class="visibilidad"></div>
+    <div class="pagina">
+        <section class="encabezado">
+            <h1>El clima en su localidad es:</h1>
+        </section>    
+        <div class="contenedor">
+            <section class="columnas">            
+                <div class="columna1">
+                    <div class="elemento"><h5>Localidad</h5></div>
+                    <div id="resultado" class="localidad"></div>
+                    <div class="elemento"><h5>Humedad</h5></div>
+                    <div id="resultado" class="humedad"></div>
+                    <div class="elemento"><h5>Velocidad del Viento</h5></div>
+                    <div id="resultado" class="viento"></div>
+                    <div class="elemento"><h5>Temperatura</h5></div>
+                    <div id="resultado" class="temperatura"></div>
+                    </div>
+                <div class="columna2">
+                    <div class="elemento"><h5>Descripcion</h5></div>
+                    <div id="resultado" class="descrip"></div>
+                    <div class="elemento"><h5>Visibilidad</h5></div>
+                    <div id="resultado" class="visibilidad"></div>
+                    <div class="elemento"><h5>Longitud</h5></div>
+                    <div id="resultado" class="long"></div>
+                    <div class="elemento"><h5>Latitud</h5></div>
+                    <div id="resultado" class="lat"></div>
+                </div>
+            </section>    
+        </div>
+    </div>
     <script src="JS/Script.js"></script>
 </body>
 </html>
