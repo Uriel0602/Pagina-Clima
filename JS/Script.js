@@ -9,8 +9,7 @@ let lat = document.querySelector('.lat')
 
 const kelvin = 273.15;
 //Cargar posicion actual
-window.addEventListener('load', () => {
-if (navigator.geolocation){
+
     navigator.geolocation.getCurrentPosition((localizacion)=>{
         console.log(localizacion);
         latitud = localizacion.coords.latitude;
@@ -47,7 +46,3 @@ if (navigator.geolocation){
         })
     }) 
         
-    }
-
-}
-)

@@ -9,7 +9,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    box-shadow: 1px 1px 8px rgb(255, 217, 50);
+    box-shadow: 0px 1px 8px rgb(255, 217, 50);
 }
 .titulo{
     display: flex;
@@ -52,6 +52,7 @@ img{
     justify-content: space-between;
     padding: 10px;
     border-radius: 30px;
+    margin: 10px;
 }
 .columna1{
    margin: 10px 10px 10px 40px;
@@ -106,18 +107,26 @@ img{
     .encabezado{
         font-size: 16px;
     }
+    .elemento{
+        width: 95px;
+        height: 30px;
+    }
+    #resultado{
+        width: 95px;
+        height: 30px;
+    }
     .columnas{
-        width: 340px;
-        padding: 10px;
+        width: 310px;
+        padding: 5px;
         margin: 10px;
     }
     .columnas div{
         font-size: 14px;
     }
     .columna1{
-        margin: 10px;
+        margin: 5px;
     }
     .columna2{
-        margin: 10px;
+        margin: 5px;
     }
 }
